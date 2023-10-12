@@ -1,0 +1,23 @@
+{
+    "name": "@dubla-ai/eslint",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "eslint": "^8.44.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-next": "canary",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-tailwindcss": "^3.13.0",
+        "eslint-plugin-unused-imports": "^3.0.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,164 @@
+{
+    "extends": [
+        "next",
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:tailwindcss/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "@typescript-eslint",
+        "simple-import-sort",
+        "unused-imports"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 140,
+                "tabWidth": 4,
+                "singleQuote": false,
+                "trailingComma": "all",
+                "arrowParens": "avoid",
+                "semi": false,
+                "endOfLine": "auto"
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "max-classes-per-file": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/forbid-prop-types": "off",
+        "import/prefer-default-export": "off",
+        "guard-for-in": "off",
+        "no-case-declarations": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "no-continue": "off",
+        "no-await-in-loop": "off",
+        "class-methods-use-this": "off",
+        "no-shadow": "off",
+        "radix": "off",
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/jsx-no-constructed-context-values": "off",
+        "react/require-default-props": "off",
+        "react/prop-types": "off",
+        "react/button-has-type": "off",
+        "jsx-a11y/media-has-caption": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "no-nested-ternary": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "simple-import-sort/exports": "warn",
+        "simple-import-sort/imports": [
+            "warn",
+            {
+                "groups": [
+                    [
+                        "^.+\\.s?css$"
+                    ],
+                    [
+                        "(server|client)-only"
+                    ],
+                    [
+                        "^@?\\w",
+                        "^\\u0000"
+                    ],
+                    [
+                        "^@/"
+                    ],
+                    [
+                        "^\\./?$",
+                        "^\\.(?!/?$)",
+                        "^\\.\\./?$",
+                        "^\\.\\.(?!/?$)",
+                        "^\\.\\./\\.\\./?$",
+                        "^\\.\\./\\.\\.(?!/?$)",
+                        "^\\.\\./\\.\\./\\.\\./?$",
+                        "^\\.\\./\\.\\./\\.\\.(?!/?$)"
+                    ],
+                    [
+                        "^@/types"
+                    ],
+                    [
+                        "^"
+                    ]
+                ]
+            }
+        ],
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "unused-imports/no-unused-imports": "warn",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^_",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ]
+    }
+}
